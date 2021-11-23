@@ -4,9 +4,7 @@
 [![Minified Size](https://img.shields.io/bundlephobia/min/vue-now.svg?style=flat-square)](https://bundlephobia.com/result?p=vue-now)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/shrpne/vue-now/blob/master/LICENSE)
 
-Vue component loads an SVG source dynamically and inline `<svg>` so you can manipulate the style of it with CSS or JS.
-It looks like basic `<img>` so you markup will not be bloated with SVG content.
-Loaded SVGs are cached so it will not make network request twice.
+Reactive Date.now() timestamp for Vue. Mixin injects `$now` computed property into component and reactively updates it every `period` milliseconds (1000 by default)
 
 [ci-img]:  https://travis-ci.org/shrpne/vue-now.svg
 [ci]:      https://travis-ci.org/shrpne/vue-now
@@ -15,19 +13,7 @@ Loaded SVGs are cached so it will not make network request twice.
 - [Install](#install)
   - [NPM](#npm)
   - [CDN](#cdn)
-  - [Vue v3](#vue-v3)
 - [Usage](#usage)
-  - [props](#props)
-    - [src](#--src)
-    - [title](#--title)
-    - [keepDuringLoading](#--keepduringloading)
-    - [transformSource](#--transformsource)
-  - [SVG attributes](#svg-attributes)
-  - [events](#events)
-    - [loaded](#--loaded)
-    - [unloaded](#--unloaded)
-    - [error](#--error)
-- [Comparison](#comparison)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [License](#license)
