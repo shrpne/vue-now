@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-now</title>
+
+    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+    <script src="./index.js" type="module"></script>
+</head>
+<body>
+<div id="app">
+    <dl>
+        <dt>$now</dt>
+        <dd>{{ $now }}</dd>
+
+        <dt>Formatted</dt>
+        <dd>{{ nowFormatted }}</dd>
+
+        <dt>Seconds after init</dt>
+        <dd>{{ secondsAfterInit }}</dd>
+    </dl>
+</div>
+</body>
+</html>
