@@ -14,7 +14,7 @@ export function VueNowMixinFactory(period = 1000) {
             },
         },
         created() {
-            this._interval = setInterval(() => {
+            this.$data._vueNow._interval = setInterval(() => {
                 this.$data._vueNow._timestamp = Date.now();
             }, period);
         },
